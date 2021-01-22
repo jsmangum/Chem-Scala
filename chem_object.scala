@@ -8,19 +8,12 @@ object chem_object extends App {
 
     override def toString:String = {
 
-       s"[$atomicSymbol]"
+      val myElements = new elementDict
 
+      if (myElements.elements.contains(atomicSymbol)) myElements.elements(atomicSymbol)
+
+      else s"$atomicSymbol not in element dictionary"
     }
-
-      def elementName:String  = {
-
-        val myElements = new elementDict
-
-        if (myElements.elements.contains(atomicSymbol)) myElements.elements(atomicSymbol)
-
-        else "not in element dictionary"
-      }
-
     }
 
    object ElementList {
