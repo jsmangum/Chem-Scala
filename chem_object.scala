@@ -14,7 +14,7 @@ object chem_object extends App {
 
       else s"$atomicSymbol not in element dictionary"
     }
-    }
+  }
 
    object ElementList {
 
@@ -32,6 +32,4 @@ object chem_object extends App {
 
     }
   }
-
-
 }
