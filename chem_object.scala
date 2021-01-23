@@ -23,8 +23,13 @@ object chem_object extends App {
    }
   class addElement {
      def addToList(element:Element, elementList:List[Element]):List[Element] = {
-      val a = element :: elementList
-      a
+
+       val myElements = new elementDict
+
+       if (myElements.elements.contains(element.atomicSymbol)) element :: elementList
+
+       else elementList
+
     }
   }
 
